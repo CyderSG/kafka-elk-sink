@@ -1,0 +1,18 @@
+{
+	"name": "cyder-digitaltoken-elk-sink-connector",
+	"config": {
+		"connector.class": "sg.com.cyder.kafka.log.elk.sink.ElkSinkConnector",
+		"tasks.max": "1",
+		"type.name": "type.name",
+		"elastic.url": "xxx",
+		"elastic.port": 9200,
+		"index.name": "cyderdigitaltoken-log",
+		"flag.field": "status",
+		"data.array": "dataList",
+		"topics": "digitaltoken-log",
+		"value.converter": "org.apache.kafka.connect.storage.StringConverter",
+		"key.converter.schemas.enable": false,
+		"value.converter.schemas.enable": false,
+		"key.converter": "org.apache.kafka.connect.storage.StringConverter"
+	}
+}
